@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/picturesque-snowy-village-with-a-church-free-image.jpeg?w=600&quality=80') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Container for the entire content */
+.container {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 800px;
+    animation: fadeInContent 2s ease-in-out;
+    margin-top: 30px; /* Move content down */
+}
+
+/* Separate Frame for Heading */
+h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeInText 2s ease-in-out;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #fff; /* Add bottom border for emphasis */
+}
+
+/* Separate Frame for Paragraph */
+p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    animation: fadeInText 2s ease-in-out;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #fff; /* Add bottom border for emphasis */
+}
+
+/* Separate Frame for Button */
+a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    animation: buttonFadeIn 2s ease-in-out;
+    width: auto;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #c13d24;
+}
+
+/* Footer styles */
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInContent {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes buttonFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

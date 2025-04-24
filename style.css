@@ -1,0 +1,430 @@
+/* General Styling */
+body {
+    font-family: 'Times New Roman', sans-serif; /* Apply Roboto font to body text */
+}
+
+h1, h2, h3, p {
+    font-family: 'Times New Roman', sans-serif; /* Apply Roboto font to headings and paragraphs */
+}
+
+h1, h2, h3 {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+.nav-links li a:hover {
+    color: #4caf50;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #e7f0fd;
+}
+
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1rem;
+    color: #666;
+}
+
+
+.hero-buttons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-gallery {
+    margin: 40px auto 0;
+    overflow: hidden;
+    width: 90%;
+    height: 200px;
+    position: relative;
+}
+
+.gallery-slider {
+    display: flex;
+    gap: 10px;
+    animation: scrollImages 15s linear infinite;
+}
+
+.gallery-slider img {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 50px 20px;
+    background: #ede9e9;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.reviews-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.review img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* VR Section */
+.vr-demo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 20px;
+    background: #e8f5e9;
+}
+
+.vr-demo h2 {
+    font-size: 2rem;
+}
+
+.vr-demo p {
+    color: #666;
+}
+
+.vr-demo img {
+    max-width: 110%;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Properties Section */
+.properties {
+    padding: 50px 20px;
+    background: #fdfdfd;
+    text-align: center;
+}
+
+.properties h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.property-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.property {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.property img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+.contact {
+    text-align: center;
+    padding: 30px 20px;
+    background: #d8dffd;
+    font-size: 0.9rem;
+}
+
+.contact p {
+    margin: 5px 0;
+    
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background: #f8f9fa;
+    text-align: center;
+    overflow: hidden;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.services p {
+    color: #666;
+    margin-bottom: 40px;
+    animation: fadeIn 1.5s ease-in-out 0.3s;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+.service {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #4caf50;
+}
+
+.service p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes scrollImages {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Reviews Section Animation */
+.reviews {
+    opacity:100;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.reviews.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* VR Demo Section Animation */
+.vr-demo {
+    opacity: 100;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.vr-demo.visible {
+    opacity: 100;
+    transform: translateY(0);
+}
+
+<link rel="stylesheet" href="style.css">
+
+
+/* General body styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Login container */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #ffffff, #e8f5e9);
+}
+
+.login-container {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+    width: 100%;
+}
+
+.login-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}

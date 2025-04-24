@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Heaven Homes</title>
+    <link rel="stylesheet" href="login.css">
+    <style>
+        /* Add some basic styling here */
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login-wrapper {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .login-container {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+        p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-wrapper">
+        <div class="login-container">
+            <h2>Login to Heaven Homes</h2>
+            <form id="login-form" onsubmit="return validateLogin(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                
+                <button type="submit">Log In</button>
+                <p id="error-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validateLogin(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Check if the credentials match
+            if (username === "Sharan01" && password === "sharan") {
+                // Redirect to the welcome page
+                window.location.href = "welcomepage.html?username=" + username;
+            } else {
+                // Show error message if invalid
+                document.getElementById('error-message').innerText = "Invalid Username or Password";
+            }
+        }
+    </script>
+</body>
+</html>

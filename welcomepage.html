@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Heaven Homes</title>
+    <link rel="stylesheet" href="welcome.css">
+</head>
+<body>
+    <!-- Main Navigation Header -->
+    <header>
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/008/075/444/non_2x/the-logo-of-home-housing-residents-real-estate-with-a-concept-that-presents-rural-nature-with-a-touch-of-leaves-and-sunflowers-vector.jpg" alt="Heaven Homes Logo" class="logo">
+            <span>Heaven Homes</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="vr-demo.html">VR Demo</a></li>
+                <li><a href="properties.html">Properties</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="logout-btn" onclick="logout()">Log Out</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+        <h1>Good Morning, Sharan</h1>
+        <p>Welcome to Heaven Homes! Here's the best offers just for you:</p>
+
+        <!-- Best Offers Section -->
+        <div class="best-offers">
+            <h3>Your Best Offers:</h3>
+            <div class="offer-card">
+                <img src="https://img.freepik.com/premium-photo/contemporary-sleek-luxury-villa-features-minimalist-aesthetic-its-exterior-design_410516-88963.jpg" alt="Villa 1">
+                <div class="offer-details">
+                    <h4>Luxury Villa A</h4>
+                    <p class="price">$500,000</p>
+                    <p class="location">Location: Beverly Hills</p>
+                    <button onclick="window.location.href='book.html'">Book Now</button>
+                </div>
+            </div>
+            <div class="offer-card">
+                <img src="https://img.pikbest.com/origin/09/26/64/199pIkbEsTtY4.jpg!w700wp" alt="Villa 2">
+                <div class="offer-details">
+                    <h4>Cozy Villa B</h4>
+                    <p class="price">$300,000</p>
+                    <p class="location">Location: Malibu</p>
+                    <button onclick="window.location.href='book.html'">Book Now</button>
+                </div>
+            </div>
+            <div class="offer-card">
+                <img src="https://i.pinimg.com/736x/04/8b/86/048b869c9303a49f32ff431fe4f19524.jpg" alt="Villa 3">
+                <div class="offer-details">
+                    <h4>Oceanfront Villa C</h4>
+                    <p class="price">$700,000</p>
+                    <p class="location">Location: Miami</p>
+                    <button onclick="window.location.href='book.html'">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Liked Properties Section -->
+        <h3>Your Liked Properties:</h3>
+        <div class="liked-properties">
+            <img src="https://dreamhomephuket.com/uploads/property/1/0/1096/thumb_21e9721e-b97a-4916-acd7-1ed5020d7925.jpg" alt="Property 1">
+            <img src="https://eden-home.world/wp-content/uploads/Exterior1.jpg" alt="Property 2">
+            <img src="https://img.freepik.com/premium-photo/contemporary-sleek-luxury-villa-features-minimalist-aesthetic-its-exterior-design_636537-165996.jpg" alt="Property 3">
+        </div>
+
+        <!-- Book Option -->
+        <div class="book-option">
+            <button onclick="window.location.href='book.html'">Book Now</button>
+        </div>
+    </div>
+
+    <script>
+        // Simulate logging out (this would normally involve backend handling)
+        function logout() {
+            // Redirect to login page
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>
